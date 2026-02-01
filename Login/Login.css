@@ -10,7 +10,7 @@ body {
     height: 100vh;
 }
 
-.logInFrom {
+.logInForm {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +22,11 @@ body {
     border-radius: 8%;
     color: #000;
     position: relative;
+}
+
+.logInForm > h1 {
+    color: #000;
+    margin-bottom: 35px;
 }
 
 .inputDiv{
@@ -78,10 +83,19 @@ input:focus {
     color: #000;
 }
 
-.reDirectLogin > a {
+.reDirectSignUp > a {
     color: blue;
 }
 
-.reDirectLogin > a:hover {
+.reDirectSIgnUp > a:hover {
     text-decoration: underline;
+}
+
+.errorMsg {
+    position: absolute;
+    top: 85px;
+    color: red;
+    font-size: 0.85rem;
+    text-align: center;
+    width: 80%;
 }
