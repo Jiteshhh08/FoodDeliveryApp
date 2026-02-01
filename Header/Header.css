@@ -1,0 +1,84 @@
+.headerContainer {
+    background-color: #ff8600;
+    color: white;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    font-weight: bold;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.rightSection {
+    height: 100%;
+    width: 54rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.searchBarDiv {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.searchBar {
+    flex: 1;
+    min-width: 0;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1.5px solid transparent;
+    outline: none;
+}
+
+.searchBar:focus {
+    box-shadow: 0 0 30px #ff4d00;
+    border-color: #ff4d00;
+}
+
+.searchBtn {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.searchBtn:hover {
+    background-color: #ff4d005a;
+    box-shadow: 0 0 30px #ff4d00;
+}
+
+.searchBtnSVG {
+    position: absolute;
+    color: black;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.extremeRight {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.extremeRight > p:hover {
+    background-color: #ff4d005a;
+    box-shadow: 0 0 30px #ff4d00;
+}
+
+.hidden {
+    display: none;
+}
