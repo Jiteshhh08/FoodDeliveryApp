@@ -46,7 +46,7 @@ input {
     border: none;
     outline: none;
     border-radius: 0px 10px 10px 0px;
-    border: 1.5px solid #ff8600;
+    border: 1.5px solid indianred;
     transition: all 0.3s ease;
 }
 
@@ -80,7 +80,6 @@ input:focus {
 
 .reDirectLogin > a {
     color: blue;
-    font-size: 1rem;
 }
 
 .reDirectLogin > a:hover {
