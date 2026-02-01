@@ -10,18 +10,23 @@ body {
     height: 100vh;
 }
 
-.signUpFrom {
+.signUpForm {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: min(450px, 90%);
-    height: 400px;
+    height: 80%;
     gap: 20px;
     background-color: #fff;
     border-radius: 8%;
     color: #000;
     position: relative;
+}
+
+.signUpForm > h1 {
+    color: #000;
+    margin-bottom: 45px;
 }
 
 .inputDiv{
@@ -34,6 +39,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     padding: 7px 10px 7px 10px;
     background: #fff;
     border-radius: 10px 0 0 10px;
@@ -84,4 +90,13 @@ input:focus {
 
 .reDirectLogin > a:hover {
     text-decoration: underline;
+}
+
+.errorMsg {
+    position: absolute;
+    top: 95px;
+    color: red;
+    font-size: 0.85rem;
+    text-align: center;
+    width: 80%;
 }

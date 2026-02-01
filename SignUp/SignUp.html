@@ -11,8 +11,10 @@
 
 <body>
     <div class="signUpContainer">
-        <form class="signUpFrom form">
-            <div class="nameInput inputDiv">
+        <form class="signUpForm form">
+            <h1>SIGN UP</h1>
+            <p class="errorMsg"></p>
+            <div class="inputDiv">
                 <label class="nameIcon inputLabel" for="name">
                     <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
                         fill="#000">
@@ -22,7 +24,7 @@
                 </label>
                 <input class="nameInput" type="text" placeholder="Name..." name="name" id="name" />
             </div>
-            <div class="emailInput inputDiv">
+            <div class="inputDiv">
                 <label class="emailIcon inputLabel" for="email">
                     <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
                         fill="#000">
@@ -32,7 +34,7 @@
                 </label>
                 <input class="emailInput" type="email" placeholder="Email..." name="email" id="email" />
             </div>
-            <div class="passwordInput inputDiv">
+            <div class="inputDiv">
                 <label class="passwordIcon inputLabel" for="password">
                     <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
                         fill="#000">
@@ -48,7 +50,7 @@
             <p class="reDirectLogin">Already have an Account, <a href="../Login/Login.html"><i>Login</i></a></p>
         </form>
     </div>
-    <script src="../AppWrite/Auth.js"></script>
+    <script src="../AppWrite/Auth.js" defer></script>
 </body>
 
 </html>
