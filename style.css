@@ -11,3 +11,8 @@
 a {
     color: white;
 }
+
+body {
+    background-color: #ff4d00;
+    padding: 20px;
+}
