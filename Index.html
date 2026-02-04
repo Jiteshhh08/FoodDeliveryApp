@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,8 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="./Design/Header.css">
 <link rel="stylesheet" href="./Design/HeroSec.css">
+<link rel="stylesheet" href="./Design/Content.css">
+<link rel="stylesheet" href="./Design/Login.css">
 
 <body>
 
@@ -19,17 +22,72 @@
             <div class="searchBarDiv">
                 <input class="searchBar hidden" type="text" name="Search" id="Search" placeholder="Search for yum...">
                 <label class="searchBtn" for="Search">Search</label>
-                <label class="searchBtnSVG hidden" for="Search"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></label>
+                <label class="searchBtnSVG hidden" for="Search"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="#000">
+                        <path
+                            d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                    </svg></label>
             </div>
             <div class="extremeRight">
                 <p>City</p>
                 <p><a href="../SignUp/SignUp.html">Sign up</a></p>
-                <p>Log in</p>
+                <p class="logIn">Log in</p>
             </div>
         </div>
     </div>
+
+    <!-- logInPage -->
+
+    <div class="logInPage hidden">
+        <div class="logInContainer">
+            <form class="logInForm form">
+                <h1>LOG IN</h1>
+                <p class="errorMsg"></p>
+                <div class="inputDiv">
+                    <label class="emailIcon inputLabel" for="email">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                            fill="#000">
+                            <path
+                                d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280 320-200v-80L480-520 160-720v80l320 200Z" />
+                        </svg>
+                    </label>
+                    <input class="emailInput" type="email" placeholder="Email..." name="email" id="email" />
+                </div>
+                <div class="inputDiv">
+                    <label class="passwordIcon inputLabel" for="password">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                            fill="#000">
+                            <path
+                                d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm240-200q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80Z" />
+                        </svg>
+                    </label>
+                    <input class="passwordInput" type="password" placeholder="Password..." name="password"
+                        id="password" />
+                </div>
+                <div class="submitButton">
+                    <button class="Submit" type="submit">Log in</button>
+                </div>
+                <p class="reDirectSignUp">Dont have an Account?, <a href="../SignUp/SignUp.html"><i>Sign Up</i></a></p>
+            </form>
+        </div>
+    </div>
+    
+    <!-- closeLogInPage -->
+    <div class="closeLogInPage hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#000">
+            <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+        </svg>
+    </div>
     
     <!-- HeroSection -->
+    
+    <!-- closeCart -->
+    
+    <div class="closeCart deActive">
+        <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#000">
+            <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+        </svg>
+    </div>
     
     <div class="mainContainer">
         <div class="left">
@@ -40,36 +98,71 @@
             <div class="lower">
                 <button class="orderBtn">Order now</button>
                 <button class="forYou"><span><svg xmlns="http://www.w3.org/2000/svg" height="22px"
-                            viewBox="0 -960 960 960" width="22px" fill="#000">
-                            <path d="M480-80q-24 0-46-9t-39-26q-29-29-50-38t-63-9q-50 0-85-35t-35-85q0-42-9-63t-38-50q-17-17-26-39t-9-46q0-24 9-46t26-39q29-29 38-50t9-63q0-50 35-85t85-35q42 0 63-9t50-38q17-17 39-26t46-9q24 0 46 9t39 26q29 29 50 38t63 9q50 0 85 35t35 85q0 42 9 63t38 50q17 17 26 39t9 46q0 24-9 46t-26 39q-29 29-38 50t-9 63q0 50-35 85t-85 35q-42 0-63 9t-50 38q-17 17-39 26t-46 9Zm100-240q25 0 42.5-17.5T640-380q0-25-17.5-42.5T580-440q-25 0-42.5 17.5T520-380q0 25 17.5 42.5T580-320Zm-202-2 260-260-56-56-260 260 56 56Zm2-198q25 0 42.5-17.5T440-580q0-25-17.5-42.5T380-640q-25 0-42.5 17.5T320-580q0 25 17.5 42.5T380-520Z" />
-                        </svg></span>For you</button>
+                    viewBox="0 -960 960 960" width="22px" fill="#000">
+                    <path
+                    d="M480-80q-24 0-46-9t-39-26q-29-29-50-38t-63-9q-50 0-85-35t-35-85q0-42-9-63t-38-50q-17-17-26-39t-9-46q0-24 9-46t26-39q29-29 38-50t9-63q0-50 35-85t85-35q42 0 63-9t50-38q17-17 39-26t46-9q24 0 46 9t39 26q29 29 50 38t63 9q50 0 85 35t35 85q0 42 9 63t38 50q17 17 26 39t9 46q0 24-9 46t-26 39q-29 29-38 50t-9 63q0 50-35 85t-85 35q-42 0-63 9t-50 38q-17 17-39 26t-46 9Zm100-240q25 0 42.5-17.5T640-380q0-25-17.5-42.5T580-440q-25 0-42.5 17.5T520-380q0 25 17.5 42.5T580-320Zm-202-2 260-260-56-56-260 260 56 56Zm2-198q25 0 42.5-17.5T440-580q0-25-17.5-42.5T380-640q-25 0-42.5 17.5T320-580q0 25 17.5 42.5T380-520Z" />
+                </svg></span>For you</button>
                 <button class="deals"><span><svg xmlns="http://www.w3.org/2000/svg" height="22px"
-                            viewBox="0 -960 960 960" width="22px" fill="#000">
-                            <path d="M320-414v-306h120v306l-60-56-60 56Zm200 60v-526h120v406L520-354ZM120-216v-344h120v224L120-216Zm0 98 258-258 142 122 224-224h-64v-80h200v200h-80v-64L524-146 382-268 232-118H120Z" />
-                        </svg></span>Deals</button>
+                    viewBox="0 -960 960 960" width="22px" fill="#000">
+                    <path
+                    d="M320-414v-306h120v306l-60-56-60 56Zm200 60v-526h120v406L520-354ZM120-216v-344h120v224L120-216Zm0 98 258-258 142 122 224-224h-64v-80h200v200h-80v-64L524-146 382-268 232-118H120Z" />
+                </svg></span>Deals</button>
             </div>
-
+            
         </div>
         <div class="right">
             <div class="deliveryBoyIMG">
-                <img src="../Images/delivery-boy.png" alt="delivery-boy">
+                <img src="./Images/delivery-boy.png" alt="delivery-boy">
+            </div>
+        </div>
+        
+        <!-- Cart -->
+        <div class="cartBg deActive">
+        </div>
+        <div class="cart">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000">
+                <path
+                d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM208-800h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Z" />
+            </svg>
+        </div>
+    </div>
+    
+
+
+    <!-- Content Area -->
+    
+    <div class="contentContainer">
+        <div class="content">
+            <div class="contentBox">
+                <img class="contentImage" src="./Images/delivery-boy.png" alt="">
+                <h4 class="contentName">Name</h4>
+            </div>
+            <div class="contentBox">
+                <img class="contentImage" src="./Images/delivery-boy.png" alt="">
+                <h4 class="contentName">Name</h4>
             </div>
         </div>
     </div>
-
+    
+    
+    
+    
     <!-- Typed.js -->
-
+    
     <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
 
     <script>
-    var typed = new Typed('#typed-output', {
-      strings: ['Be it YUM', 'At your Doorsteps', 'At your price'],
-      typeSpeed: 50,
-      showCursor: false
-    });
+        var typed = new Typed('#typed-output', {
+            strings: ['Be it YUM', 'At your Doorsteps', 'At your price'],
+            typeSpeed: 50,
+            showCursor: false
+        });
     </script>
 
+
+    <script src="../AppWrite/Auth.js" defer></script>
+    <script src="./Functionality/Cart.js"></script>
     <script src="./Functionality/Header.js"></script>
-    <script src="./Functionality/HeroSec.js"></script>
 </body>
+
 </html>
