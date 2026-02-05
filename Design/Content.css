@@ -1,25 +1,106 @@
 .contentContainer {
-    display: flex;
+    position: relative;
     margin-top: 10vh;
     padding: 40px 100px;
     background: rgba(255, 139, 77, 0.6);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
     border-radius: 50px;
-    flex-wrap: wrap;
+    position: relative;
 }
 
 .contentBox {
+    width: 175px;
+    height: 175px;
+    flex-shrink: 0;
+    background: white;
+    border-radius: 32px;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    border-radius: 40px;
-    height: 155px;
-    width: 155px;
+    justify-content: center;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
 }
 
-.content > .contentBox > img {
+.contentBox:hover {
+    transform: translateY(-6px);
+}
+
+.content {
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 12px;
+    padding-right: 120px;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+.contentBox img {
     width: 80%;
     height: 80%;
+    object-fit: contain;
+}
+
+.contentDetails {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentDetails > p {
+    font-size: 0.75rem;
+    font-weight: light;
+}
+
+.contentDetails > span {
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.options {
+    position: absolute;
+    top: 30px;
+    left: 111px;
+    color: #000;
+}
+
+.scrollBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: none;
+    background: white;
+    color: #333;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.leftBtn {
+    left: 80px;
+    top: 185px;
+}
+
+.rightBtn {
+    right: 70px;
+    top: 185px;
+}
+
+.scrollBtn:hover {
+    transform: translateY(-50%) scale(1.1);
 }
