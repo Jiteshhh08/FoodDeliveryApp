@@ -56,3 +56,21 @@ body {
     z-index: 6;
     cursor: pointer;
 }
+
+.rightBtn {
+    right: 0;
+
+}
+
+.content::-webkit-scrollbar {
+    height: 6px;
+}
+
+.content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
