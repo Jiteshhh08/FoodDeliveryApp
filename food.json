@@ -1,0 +1,17 @@
+[
+  { "id": 1, "name": "Vada", "category": "South Indian", "price": 40, "Image": "Images/food_1.png" },
+  { "id": 2, "name": "Masala Dosa", "category": "South Indian", "price": 70, "Image": "Images/food_2.png" },
+  { "id": 3, "name": "Idli", "category": "South Indian", "price": 50, "Image": "Images/food_3.png" },
+
+  { "id": 7, "name": "Shawrma", "category": "Street Food", "price": 40, "Image": "Images/food_7.png" },
+  { "id": 8, "name": "Pizza", "category": "Street Food", "price": 45, "Image": "Images/food_8.png" },
+  { "id": 9, "name": "Pav Bhaji", "category": "Street Food", "price": 90, "Image": "Images/food_9.png" },
+  { "id": 10, "name": "Burger", "category": "Street Food", "price": 35, "Image": "Images/food_10.png" },
+
+  { "id": 11, "name": "Butter Chicken", "category": "North Indian", "price": 220, "Image": "Images/food_11.png" },
+  { "id": 12, "name": "Momos", "category": "North Indian", "price": 200, "Image": "Images/food_12.png" },
+
+  { "id": 22, "name": "IceCream", "category": "Dessert", "price": 45, "Image": "Images/food_22.png" },
+  { "id": 23, "name": "Cake", "category": "Dessert", "price": 60, "Image": "Images/food_23.png" },
+  { "id": 24, "name": "Pastry", "category": "Dessert", "price": 60, "Image": "Images/food_24.png"}
+]
