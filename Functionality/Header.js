@@ -2,10 +2,8 @@ const Header = document.querySelector('.headerContainer')
 const searchBar = document.querySelector('.searchBar')
 const searchBtn = document.querySelector('.searchBtn')
 const searchSVG = document.querySelector('.searchBtnSVG')
-const logIn = document.querySelector('.logIn')
-const logInPage = document.querySelector('.logInPage')
-const closeLogIn = document.querySelector('.closeLogInPage')
- 
+
+
 searchBtn.addEventListener('click', () => {
     searchBar.classList.remove('hidden')
     searchBtn.classList.add('hidden')
@@ -19,6 +17,12 @@ document.addEventListener('keydown', (e) => {
         searchBtn.classList.remove('hidden')
     }
 })
+
+
+const logIn = document.querySelector('.logIn')
+const logInPage = document.querySelector('.logInPage')
+const closeLogIn = document.querySelector('.closeLogInPage')
+
 
 logIn.addEventListener('click', () => {
     logInPage.classList.remove('hidden')
@@ -43,4 +47,20 @@ document.addEventListener('click', (e) => {
         searchBtn.classList.remove('hidden')
         searchSVG.classList.add('hidden')
     }
+})
+
+//SideBar Logic
+
+const sideBar = document.querySelector('.sideBar')
+const closeSideBar = document.querySelector('.closeSideBar')
+const hamburger = document.querySelector('.menu')
+
+hamburger.addEventListener('click', (e) => {
+    sideBar.classList.remove('deActive')
+    hamburger.classList.add('deActive')
+})
+
+closeSideBar.addEventListener('click', (e) => {
+    sideBar.classList.add('deActive')
+    hamburger.classList.remove('deActive')
 })
