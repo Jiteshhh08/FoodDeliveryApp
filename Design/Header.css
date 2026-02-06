@@ -17,6 +17,7 @@
 
 .logo {
     cursor: pointer;
+    width: 200px;
 }
 
 .rightSection {
@@ -75,12 +76,35 @@
     white-space: nowrap;
 }
 
+.selectCity {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.city {
+    color: #fff;
+}
+
+.select {
+    width: 20px;
+    background-color: transparent;
+    padding: 0px;
+    border: none;
+    outline: none;
+    color: #000;
+    font-weight: bolder;
+}
+
 .extremeRight {
     display: flex;
     align-items: center;
     gap: 30px;
-    cursor: pointer;
 }
+
+.extremeRight > p {
+    cursor: pointer;
+}   
 
 .extremeRight > p:hover {
     background-color: #ff4d005a;
@@ -112,4 +136,54 @@
     top: 2%;
     z-index: 6;
     cursor: pointer;
+}
+
+.sideBar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    width: max(30vw, 300px);
+    background-color: #ffffff58;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    padding: 40px;
+    border-radius: 20px 0 0 20px;
+}
+
+.sideBar > div {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #fff;
+    font-weight: bolder;
+    width: 100%;
+}
+
+.sideBar > div > p {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.closeSideBar {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.sideBar > div > p:hover {
+    background-color: rgba(240, 236, 236, 0.121);
+}
+
+@media (max-width: 800px) {
+    .menu {
+        display: block;
+    }
 }
