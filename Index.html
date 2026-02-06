@@ -29,12 +29,39 @@
                     </svg></label>
             </div>
             <div class="extremeRight">
-                <p>City</p>
+                <p class="selectCity"><label class="city" for="city">City</label>
+                    <select class="select" id="city" name="city" required>
+                        <option value="" disabled selected></option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Delhi">Delhi</option>
+                    </select>
+                </p>
                 <p><a href="./SignUp/SignUp.html">Sign up</a></p>
                 <p class="logIn">Log in</p>
                 <p>Contact us</p>
+                <p><svg class="hidden menu" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                        width="24px" fill="#fff">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></p>
             </div>
         </div>
+    </div>
+    <div class="sideBar ">
+        <div class="sideBarDiv">
+            <p class="selectCity"><label class="city" for="city">City</label>
+                <select class="select" id="city" name="city" required>
+                    <option value="" disabled selected></option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Delhi">Delhi</option>
+                </select>
+            </p>
+            <p><a href="./SignUp/SignUp.html">Sign up</a></p>
+            <p class="logIn">Log in</p>
+            <p>Contact us</p>
+        </div>
+        <p class="closeSideBar"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></p>
     </div>
 
     <!-- logInPage -->
@@ -135,11 +162,17 @@
     <div class="contentContainer">
         <h1 class="options">Options</h1>
 
-        <button class="scrollBtn leftBtn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg></button>
+        <button class="scrollBtn leftBtn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                width="24px" fill="#000">
+                <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
+            </svg></button>
         <div class="content">
 
         </div>
-        <button class="scrollBtn rightBtn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></button>
+        <button class="scrollBtn rightBtn"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                viewBox="0 -960 960 960" width="24px" fill="#000">
+                <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+            </svg></button>
     </div>
 
 
@@ -155,7 +188,7 @@
         });
     </script>
 
-
+    <script src="./Functionality/select.js"></script>
     <script src="./Functionality/content.js"></script>
     <script src="./Functionality/Food.js"></script>
     <script src="./AppWrite/Auth.js" defer></script>
