@@ -94,7 +94,7 @@ input:focus {
 
 .errorMsg {
     position: absolute;
-    top: 95px;
+    top: 75px;
     color: red;
     font-size: 0.85rem;
     text-align: center;
