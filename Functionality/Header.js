@@ -34,6 +34,20 @@ closeLogIn.addEventListener('click', () => {
     closeLogIn.classList.add('hidden')
 })
 
+//SideBar Login 
+
+const sideBarlogIn = document.querySelector('.sideBarLogIn')
+
+sideBarlogIn.addEventListener('click', () => {
+    logInPage.classList.remove('hidden')
+    closeLogIn.classList.remove('hidden')
+})
+
+closeLogIn.addEventListener('click', () => {
+    logInPage.classList.add('hidden')
+    closeLogIn.classList.add('hidden')
+})
+
 
 //Click outside the searchBar
 
@@ -55,12 +69,12 @@ const sideBar = document.querySelector('.sideBar')
 const closeSideBar = document.querySelector('.closeSideBar')
 const hamburger = document.querySelector('.menu')
 
-hamburger.addEventListener('click', (e) => {
+hamburger.addEventListener('click', () => {
     sideBar.classList.remove('deActive')
     hamburger.classList.add('deActive')
 })
 
-closeSideBar.addEventListener('click', (e) => {
+closeSideBar.addEventListener('click', () => {
     sideBar.classList.add('deActive')
     hamburger.classList.remove('deActive')
 })
