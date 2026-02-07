@@ -40,16 +40,16 @@
                 <p><a href="./SignUp/SignUp.html">Sign up</a></p>
                 <p class="logIn">Log in</p>
                 <p>Contact us</p>
-                <p><svg class="hidden menu" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
-                        width="24px" fill="#fff">
-                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                    </svg></p>
             </div>
+            <p><svg class="hidden menu" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                    width="24px" fill="#fff">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg></p>
         </div>
     </div>
-    <div class="sideBar ">
+    <div class="sideBar deActive">
         <div class="sideBarDiv">
-            <p class="selectCity"><label class="city" for="city">City</label>
+            <p class="selectCity"><label class="city">City</label>
                 <select class="select" id="city" name="city" required>
                     <option value="" disabled selected></option>
                     <option value="Mumbai">Mumbai</option>
@@ -58,15 +58,25 @@
                 </select>
             </p>
             <p><a href="./SignUp/SignUp.html">Sign up</a></p>
-            <p class="logIn">Log in</p>
+            <p class="sideBarLogIn">Log in</p>
             <p>Contact us</p>
         </div>
-        <p class="closeSideBar"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></p>
+        <p class="closeSideBar"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960"
+                width="30px" fill="#000">
+                <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg></p>
     </div>
 
     <!-- logInPage -->
 
     <div class="logInPage hidden">
+        <!-- closeLogInPage -->
+        <div class="closeLogInPage hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#000">
+                <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+            </svg>
+        </div>
         <div class="logInContainer">
             <form class="logInForm form">
                 <h1>LOG IN</h1>
@@ -100,22 +110,8 @@
         </div>
     </div>
 
-    <!-- closeLogInPage -->
-    <div class="closeLogInPage hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#000">
-            <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
-        </svg>
-    </div>
 
     <!-- HeroSection -->
-
-    <!-- closeCart -->
-
-    <div class="closeCart deActive">
-        <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#000">
-            <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
-        </svg>
-    </div>
 
     <div class="mainContainer">
         <div class="left">
@@ -146,6 +142,17 @@
 
         <!-- Cart -->
         <div class="cartBg deActive">
+            <!-- closeCart -->
+            <div class="closeCart deActive">
+                <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#000">
+                    <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+                </svg>
+            </div>
+
+            <h1>Cart</h1>
+            <div class="cartItems">
+                <div class="total"></div>
+            </div>
         </div>
         <div class="cart">
             <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000">
