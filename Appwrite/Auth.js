@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", () => {
 const Form = document.querySelector('.form')
 const nameInput = document.querySelector('.nameInput')
 const emailInput = document.querySelector('.emailInput')
@@ -22,6 +23,7 @@ Form.addEventListener('submit', (e) => {
         e.preventDefault();
         if (errorMsg) {
             errorMsg.textContent = Errors.join(' | ');
+            errorMsg.style.display = "block";
         }
     }
 })
@@ -52,3 +54,4 @@ function logInFormErrors(email, password) {
     }
     return Errors;
 }
+})
