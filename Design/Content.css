@@ -113,6 +113,9 @@
 }
 
 @media (max-width: 740px) {
+    .contentContainer{
+        padding: 40px;
+    }
     .contentBox{
         flex-shrink: 0;
         width: 125px;
@@ -138,7 +141,11 @@
     }
     
     .rightBtn{
-        right: 85px;
+        right: 30px;
+    }
+
+    .leftBtn {
+        left: 30px;
     }
 
     .options {
@@ -150,14 +157,13 @@
 @media (max-width: 420px) {
     .content{
         left: 0;
-        width: 140%;
     }
     .contentBox{
         flex-shrink: 0;
     }
 
-    .scrollBtn {
-        right: 50px;
+    .rightBtn {
+        right: 20px;
     }
 
     .contentDetails > p {
