@@ -47,7 +47,7 @@ const addToCart = (id) => {
 }
 
 const cartItems = document.querySelector('.cartItems');
-const totalPrice = document.querySelector('.total');
+const checkOutTotal = document.querySelector('.grandTotal');
 
 const renderCart = () => {
     cartItems.innerHTML = cartSection.map(item =>
@@ -67,7 +67,7 @@ const renderCart = () => {
         ).join('')
 
     const total = cartSection.reduce((sum, item) => sum + item.price * item.qty, 0)
-        totalPrice.textContent = `total: ₹ ${total}` 
+        checkOutTotal.textContent = `total: ₹ ${total}` 
 }
 
 //+ and - logic 
