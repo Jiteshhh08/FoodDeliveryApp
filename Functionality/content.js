@@ -17,3 +17,15 @@ leftBtn.addEventListener('click', () => {
         behavior: 'smooth'
     })
 })
+
+// OrderNow btn 
+
+const orderNow = document.querySelector('.orderBtn')
+const orderingItems = document.querySelector('#contentContainer')
+
+orderNow.addEventListener('click', (e) => {
+    orderingItems.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    })
+})
