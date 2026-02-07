@@ -1,6 +1,6 @@
 .contentContainer {
     position: relative;
-    margin-top: 10vh;
+    margin-top: 50px;
     padding: 40px 100px;
     background: rgba(255, 139, 77, 0.6);
     backdrop-filter: blur(10px);
@@ -66,7 +66,7 @@
 .options {
     position: absolute;
     top: 30px;
-    left: 111px;
+    left: 80px;
     color: #000;
 }
 
@@ -103,4 +103,73 @@
 
 .scrollBtn:hover {
     transform: translateY(-50%) scale(1.1);
+}
+
+@media (max-width: 950px) {
+    .contentBox{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 740px) {
+    .contentBox{
+        flex-shrink: 0;
+        width: 125px;
+        height: 125px;
+    }
+
+    .contentDetails{
+        gap: 8px;
+    }
+
+    .contentDetails > p {
+        font-size: 0.65rem;
+    }
+    
+    .contentDetails > span {
+        font-size: 0.85rem;
+    }
+
+    .scrollBtn {
+        width: 30px;
+        height: 30px;
+        top: 60%;
+    }
+    
+    .rightBtn{
+        right: 85px;
+    }
+
+    .options {
+        font-size: 1.75rem;
+        left: 80px;
+    }
+}
+
+@media (max-width: 420px) {
+    .content{
+        left: 0;
+        width: 140%;
+    }
+    .contentBox{
+        flex-shrink: 0;
+    }
+
+    .scrollBtn {
+        right: 50px;
+    }
+
+    .contentDetails > p {
+        font-size: 0.50rem;
+    }
+    
+    .contentDetails > span {
+        font-size: 0.70rem;
+    }
+
+    .options {
+        font-size: 1.5rem;
+        left: 60px;
+    }
 }
