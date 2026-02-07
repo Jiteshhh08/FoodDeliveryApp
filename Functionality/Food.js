@@ -1,8 +1,14 @@
 const contentArea = document.querySelector('.content')
+let foodsData = []
 
 fetch('./food.json')
 .then(res => res.json())
-.then(data => renderFoods(data))
+.then(data => {
+    foodsData = data;
+    renderFoods(foodsData);
+    loadCart();
+}
+)
 .catch(err => console.error(err))
 
 const renderFoods = (foods) => {
