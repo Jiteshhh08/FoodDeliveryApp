@@ -11,13 +11,14 @@
 <link rel="stylesheet" href="./Design/HeroSec.css">
 <link rel="stylesheet" href="./Design/Content.css">
 <link rel="stylesheet" href="./Design/Login.css">
+<link rel="stylesheet" href="./Design/Footer.css">
 
 <body>
 
     <!-- Header -->
 
     <div class="headerContainer">
-        <div class="logo">Food Delivery</div>
+        <div class="logo">Foodie.</div>
         <div class="rightSection">
             <div class="searchBarDiv">
                 <input class="searchBar hidden" type="text" name="Search" id="Search" placeholder="Search for yum...">
@@ -151,9 +152,15 @@
 
             <h1>Cart</h1>
             <div class="cartItems">
-                <div class="total"></div>
+            </div>
+
+            <!-- checkOut -->
+            <div class="checkOut">
+                <div class="grandTotal"></div>
+                <button class="checkOutBtn">Place Order</button>
             </div>
         </div>
+
         <div class="cart">
             <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000">
                 <path
@@ -166,7 +173,7 @@
 
     <!-- Content Area -->
 
-    <div class="contentContainer">
+    <div class="contentContainer" id="contentContainer">
         <h1 class="options">Options</h1>
 
         <button class="scrollBtn leftBtn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
@@ -181,6 +188,33 @@
                 <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
             </svg></button>
     </div>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="footerTop">
+            <div class="footerLogo">
+                Foodie<span>.</span>
+            </div>
+
+            <ul class="footerLinks">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Refund Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footerBottom">
+            <p>
+                Made with <span class="heart">❤</span> for food lovers
+            </p>
+            <p class="copyright">
+                © 2026 Foodie. All rights reserved.
+            </p>
+        </div>
+    </footer>
 
 
     <!-- Typed.js -->
