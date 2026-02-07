@@ -80,10 +80,12 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    cursor: pointer;
 }
 
 .city {
     color: #fff;
+    cursor: pointer;
 }
 
 .select {
@@ -124,17 +126,17 @@
     top: 0;
     right: 0;
     height: 100%;
-    width: 30%;
+    width: max(30vw, 300px);
     background-color: #fff;
-    z-index: 5;
+    z-index: 11;
     border-radius: 5% 0 0 5%;
 }
 
 .closeLogInPage {
-    position: fixed;
-    right: 25%;
+    left: 20px;
+    position: absolute;
     top: 2%;
-    z-index: 6;
+    z-index: 12;
     cursor: pointer;
 }
 
@@ -182,8 +184,50 @@
     background-color: rgba(240, 236, 236, 0.121);
 }
 
+@media (max-width: 1000px) {
+    .headerContainer{
+        width: 96%;
+    }
+}
+
 @media (max-width: 800px) {
+    .headerContainer{
+        width: 95%;
+    }
     .menu {
         display: block;
+        cursor: pointer;
+    }
+    .extremeRight {
+        display: none;
+    }
+}
+
+@media (max-width: 620px) {
+    .headerContainer {
+        width: 94%;
+    }
+}
+
+@media (max-width: 580px) {
+    .headerContainer {
+        width: 93%;
+    }
+}
+
+@media (max-width: 420px) {
+    .headerContainer{
+        width: 91%;
+    }
+    .sideBar {
+        width: 100%;
+    }
+
+    .logInPage {
+        width: 100%;
+    }
+
+    .rightSection{
+        gap: 10px;
     }
 }
